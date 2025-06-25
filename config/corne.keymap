@@ -44,7 +44,7 @@
          * |------+------+------+------+------|          |------+------+------+------+------|
          * |  ^   |  _   |  %   |  $   |  ~   |          |  0   |  1   |  2   |  3   |  /   |
          * `--------------------.------+------|          |------+------.--------------------'
-         *                |     |  |   |  `   |          |      | Sym  |      |    
+         *                |     |  |   |  `   |          |      | Sym  |      |
          *                `-------------------'          `--------------------'
          */
         symbols {
@@ -64,15 +64,15 @@
          * |------+------+------+------+------|          |------+------+------+------+------|
          * | Undo | Cut  | Copy | Pste |      |          | Pgdn | Bspc | Shft | App  | Pscr |
          * `--------------------.------+------|          |------+------.--------------------'
-         *               |      | Ext  |      |          | Ent  | RCtl |      |    
+         *               |      | Ext  |      |          | Ent  | RCtl |      |
          *               `--------------------'          `--------------------'
          */
         extend {
             bindings = <
-                &kp ESC    &kp PSCR    &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &kp CAPS_LOCK
+                &kp ESC    &none       &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &none
                 &kp LALT   &kp LGUI    &kp LSFT  &kp LCTRL   &kp TAB        &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
                 &kp LC(Z)  &kp LC(X)   &kp LC(C) &kp LC(V)   &none          &kp PG_DN    &kp BSPC    &kp RSFT  &kp APP      &kp PSCR
-                                                 &none       &none          &kp ENTER    &kp RCTRL   &none
+                                       &none     &none       &kp ENTER      &kp RCTRL    &none       &none
             >;
         };
     };
