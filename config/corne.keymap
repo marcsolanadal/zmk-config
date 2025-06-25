@@ -1,6 +1,6 @@
 /*
  * Corne-5-col (36 keys) — ZMK keymap
- * Adapted from the official 3 × 6 + 3 Corne example
+ *
  * SPDX-License-Identifier: MIT
  */
 
@@ -9,6 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 
  / {
+    chosen {
+        zmk,physical-layout = &foostan_corne_5col_layout;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
