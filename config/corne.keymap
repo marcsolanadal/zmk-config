@@ -1,5 +1,5 @@
 /*
- * Corne-5-col (36 keys) — ZMK keymap
+ * Corne-5-col (36 keys) - ZMK keymap
  *
  * SPDX-License-Identifier: MIT
  */
@@ -16,17 +16,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* Colemak-DH
-         * .----------------------------------.          .----------------------------------.
-         * |  q   |  w   |  f   |  p   |  b   |          |  j   |  l   |  u   |  y   |  '   |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * |  a   |  r   |  s   |  t   |  g   |          |  m   |  n   |  e   |  i   |  o   |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * |  z   |  x   |  c   |  d   |  v   |          |  k   |  h   |  ,   |  .   |  /   |
-         * `--------------------.------+------|          |------+------.--------------------'
-         *               |      | Ext  | Shft |          | Ent  | Sym  |      |
-         *               `--------------------'          `--------------------'
-         */
         default_layer {
             bindings = <
                 &kp Q   &kp W    &kp F    &kp P     &kp B                &kp J           &kp L   &kp U     &kp Y   &kp SEMI
@@ -36,17 +25,6 @@
             >;
         };
 
-        /* Symbols
-         * .----------------------------------.          .----------------------------------.
-         * |  !   |  @   |  #   |  :   |  []  |          |  =   |  7   |  8   |  9   |  +   |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * |  \   |  &   |  {}  |  ()  |  ;   |          |  *   |  4   |  5   |  6   |  -   |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * |  ^   |  _   |  %   |  $   |  ~   |          |  0   |  1   |  2   |  3   |  /   |
-         * `--------------------.------+------|          |------+------.--------------------'
-         *                |     |  |   |  `   |          |      | Sym  |      |
-         *                `-------------------'          `--------------------'
-         */
         symbols {
             bindings = <
                 &kp EXCL    &kp AT    &kp HASH    &kp COLON    &kp LBKT         &kp EQUAL    &kp N7    &kp N8    &kp N9    &kp PLUS
@@ -56,23 +34,12 @@
             >;
         };
 
-        /* Extend
-         * .----------------------------------.          .----------------------------------.
-         * | Esc  | Prnt |  Up  | Down | Ins  |          | Pgup | Home | End  |      | Caps |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * | Alt  | GUI  | Shft | LCtl | Tab  |          | Left | Down |  Up  | Rght | Del  |
-         * |------+------+------+------+------|          |------+------+------+------+------|
-         * | Undo | Cut  | Copy | Pste |      |          | Pgdn | Bspc | Shft | App  | Pscr |
-         * `--------------------.------+------|          |------+------.--------------------'
-         *               |      | Ext  |      |          | Ent  | RCtl |      |
-         *               `--------------------'          `--------------------'
-         */
         extend {
             bindings = <
                 &kp ESC    &none       &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &none
                 &kp LALT   &kp LGUI    &kp LSFT  &kp LCTRL   &kp TAB        &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
-                &kp LC(Z)  &kp LC(X)   &kp LC(C) &kp LC(V)   &none          &kp PG_DN    &kp BSPC    &kp RSFT  &kp APP      &kp PSCR
-                                       &none     &none       &kp ENTER      &kp RCTRL    &none       &none
+                &kp LC(Z)  &kp LC(X)   &kp LC(C) &kp LC(V)   &none          &kp PG_DN    &kp BSPC    &none     &kp APP      &kp PSCR
+                                       &none     &none       &kp ENTER      &none        &none       &none
             >;
         };
     };
