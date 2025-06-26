@@ -8,17 +8,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define MEH &kp LS(LC(LALT))
+
 / {
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
     };
 
     behaviors {
-        meh: meh {
-            compatible = "zmk,behavior-key-press";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(LALT))>;
-        };
         td_bkt: tap_dance_brakets {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -47,7 +44,7 @@
                 &kp Q   &kp W    &kp F    &kp P     &kp B                &kp J           &kp L   &kp U     &kp Y   &kp APOS
                 &kp A   &kp R    &kp S    &kp T     &kp G                &kp M           &kp N   &kp E     &kp I   &kp O
                 &kp Z   &kp X    &kp C    &kp D     &kp V                &kp K           &kp H   &kp COMMA &kp DOT &kp FSLH
-                                 &meh     &mo 2     &mt LSFT SPACE       &mt LSFT SPACE  &mo 1   &none
+                                 MEH      &mo 2     &mt LSFT SPACE       &mt LSFT SPACE  &mo 1   &none
             >;
         };
 
