@@ -36,6 +36,26 @@
         };
     };
 
+    macros {
+       lock: lock_all_systems {
+           compatible = "zmk,behavior-macro";
+           #binding-cells = <0>;
+           bindings =
+             // Linux & Android → HID “Terminal Lock / Screensaver” codes
+             <&kp C_AL_LOCK &kp K_LOCK>
+
+             // Windows 10 / 11 (and most Linux DEs) → Win + L                  
+             , <&macro_press   &kp LGUI>
+             , <&macro_tap     &kp L>
+             , <&macro_release &kp LGUI>
+
+             // macOS 10.13+ → Ctrl + Cmd + Q (system lock)
+             , <&macro_press   &kp LCTRL &kp LGUI>
+             , <&macro_tap     &kp Q>
+             , <&macro_release &kp LCTRL &kp LGUI>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,7 +88,7 @@
 
         function {
             bindings = <
-                &none    &none       &none       &none       &none            &kp F12     &kp F7      &kp F8      &kp F9      &none      
+                &none    &none       &none       &none       &none            &kp F12     &kp F7      &kp F8      &kp F9      &lock
                 &none    &none       &none       &none       &none            &kp F11     &kp F4      &kp F5      &kp F6      &none      
                 &none    &none       &none       &none       &none            &kp F10     &kp F1      &kp F2      &kp F3      &none      
                                      &none       &none       &none            &none       &none       &none
