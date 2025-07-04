@@ -80,7 +80,7 @@
         extend {
             bindings = <
                 &kp ESC    &none       &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &caps_word
-                &sk LALT   &sk LGUI    &sk LCTRL &sk LSFT    &kp TAB        &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
+                &sk LALT   &sk LCTRL   &sk LGUI  &sk LSFT    &kp TAB        &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
                 &kp LG(Z)  &kp LG(X)   &kp LG(C) &kp LG(V)   &none          &kp PG_DN    &kp BSPC    &none     &none        &none
                                        &none     &none       &none          &kp ENTER    &none       &none
             >;
