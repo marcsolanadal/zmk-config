@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/behaviors.h>
 
 #define MEH &kp LS(LC(LALT))
 
@@ -16,6 +17,17 @@
     };
 
     behaviors {
+	// Custom mod-tap for space-shift
+	mt_tp: mod_tap_space_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
+        };
+
+	// Tap dances for closing symbols
         td_bkt: tap_dance_brakets {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -61,10 +73,10 @@
 
         default_layer {
             bindings = <
-                &kp Q   &kp W    &kp F    &kp P     &kp B                &kp J           &kp L   &kp U     &kp Y   &kp APOS
-                &kp A   &kp R    &kp S    &kp T     &kp G                &kp M           &kp N   &kp E     &kp I   &kp O
-                &kp Z   &kp X    &kp C    &kp D     &kp V                &kp K           &kp H   &kp COMMA &kp DOT &kp FSLH
-                                 &mo 3    &mo 2     &mt LSFT SPACE       &mt LSFT SPACE  &mo 1   MEH
+                &kp Q   &kp W    &kp F    &kp P     &kp B                &kp J	            &kp L   &kp U     &kp Y   &kp APOS
+                &kp A   &kp R    &kp S    &kp T     &kp G                &kp M              &kp N   &kp E     &kp I   &kp O
+                &kp Z   &kp X    &kp C    &kp D     &kp V                &kp K              &kp H   &kp COMMA &kp DOT &kp FSLH
+                                 &mo 3    &mo 2     &mt_tp LSFT SPACE    &mt_tp LSFT SPACE  &mo 1   MEH
             >;
         };
 
