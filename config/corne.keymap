@@ -101,7 +101,7 @@
                 &kp A   &kp R    &kp S        &hml LSFT T   &kp G                &kp M              &hmr LSFT N   &kp E     &kp I   &kp O
                 &kp Z   &kp X    &kp C        &kp D         &kp V                &kp K              &kp H         &kp COMMA &kp DOT &kp FSLH
                                  &lt 3 ESC    &lt 2 TAB     &kp SPACE            &kp SPACE          &mo 1         MEH
-            >
+            >;
         };
 
         symbols {
