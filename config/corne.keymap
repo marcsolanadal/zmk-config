@@ -97,11 +97,11 @@
 
         default_layer {
             bindings = <
-                &kp Q   &kp W    &kp F    &kp P         &kp B                &kp J	        &kp L         &kp U     &kp Y   &kp APOS
-                &kp A   &kp R    &kp S    &hml LSFT T   &kp G                &kp M              &hmr LSFT N   &kp E     &kp I   &kp O
-                &kp Z   &kp X    &kp C    &kp D         &kp V                &kp K              &kp H         &kp COMMA &kp DOT &kp FSLH
-                                 &mo 3    &mo 2         &kp SPACE            &kp SPACE          &mo 1         MEH
-            >;
+                &kp Q   &kp W    &kp F        &kp P         &kp B                &kp J	            &kp L         &kp U     &kp Y   &kp APOS
+                &kp A   &kp R    &kp S        &hml LSFT T   &kp G                &kp M              &hmr LSFT N   &kp E     &kp I   &kp O
+                &kp Z   &kp X    &kp C        &kp D         &kp V                &kp K              &kp H         &kp COMMA &kp DOT &kp FSLH
+                                 &lt 3 ESC    &lt 2 TAB     &kp SPACE            &kp SPACE          &mo 1         MEH
+            >
         };
 
         symbols {
@@ -115,8 +115,8 @@
 
         extend {
             bindings = <
-                &kp ESC    &none       &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &caps_word
-                &sk LALT   &sk LCTRL   &sk LGUI  &sk LSFT    &kp TAB        &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
+                &none      &none       &kp UP    &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &caps_word
+                &sk LALT   &sk LCTRL   &sk LGUI  &sk LSFT    &none          &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
                 &kp LG(Z)  &kp LG(X)   &kp LG(C) &kp LG(V)   &none          &kp PG_DN    &kp BSPC    &none     &none        &kp PSCRN
                                        &none     &none       &none          &kp ENTER    &none       &none
             >;
