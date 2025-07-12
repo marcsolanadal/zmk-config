@@ -26,7 +26,9 @@ include:
     shield: corne_dongle
   - board: nice_nano_v2
     shield: settings_reset
-
+  - board: seeeduino_xiao_ble 
+    shield: settings_reset
+ 
   # Add these cmake-args to the peripherals you wish to use with the dongle
   - board: nice_nano_v2
     shield: corne_left
