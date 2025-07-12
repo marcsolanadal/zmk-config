@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &foostan_corne_5col_layout;
+	zmk,output = &usb_hid
     };
 
     mock_kscan: mock_kscan_0 {  
