@@ -12,9 +12,6 @@
 #define MEH &kp LS(LC(LALT))
 
 / {
-    chosen {
-        zmk,physical-layout = &foostan_corne_5col_layout;
-    };
 
     behaviors {
 	// Custom mod-tap for space-shift
