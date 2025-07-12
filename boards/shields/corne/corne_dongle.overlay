@@ -3,7 +3,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &corne_5col_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -25,7 +25,7 @@
         >;
     };
 
-    physical_layout0: physical_layout_0 {
+    corne_5col_layout: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&five_column_transform>;
