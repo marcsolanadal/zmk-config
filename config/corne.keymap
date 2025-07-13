@@ -112,7 +112,7 @@
 
         extend {
             bindings = <
-                &kp ESC    &none       &kp LG(F) &kp DOWN    &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &caps_word
+                &kp ESC    &none       &kp LG(F) &none       &kp INS        &kp PG_UP    &kp HOME    &kp END   &none        &caps_word
                 &sk LALT   &sk LCTRL   &sk LGUI  &sk LSFT    &none          &kp LEFT     &kp DOWN    &kp UP    &kp RIGHT    &kp DEL
                 &kp LG(Z)  &kp LG(X)   &kp LG(C) &kp LG(V)   &none          &kp PG_DN    &kp BSPC    &none     &none        &kp PSCRN
                                        &none     &none       &none          &kp ENTER    &none       &none
