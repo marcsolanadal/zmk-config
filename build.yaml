@@ -20,7 +20,7 @@
 ---
 include:
   # -----------------------------------------
-  # Your other keyboard parts here
+  # CORNE
   # -----------------------------------------
   - board: seeeduino_xiao_ble 
     shield: corne_dongle
@@ -42,5 +42,7 @@ include:
   # -----------------------------------------
   - board: seeeduino_xiao_rp2040
     shield: totem_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
   - board: seeeduino_xiao_rp2040
     shield: totem_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
