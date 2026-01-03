@@ -48,9 +48,9 @@
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+};
 
-    // Enable UART for wired split (board disables it by default)
-    &xiao_serial {
-        status = "okay";
-    };
+// Enable UART for wired split (board disables it by default)
+&xiao_serial {
+    status = "okay";
 };
