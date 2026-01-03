@@ -29,6 +29,13 @@
 };
 
 / {
+    wired_split {
+        compatible = "zmk,wired-split";
+        device = <&xiao_serial>;
+    };
+};
+
+/ {
     combos {
             compatible = "zmk,combos";
             combo_esc {
